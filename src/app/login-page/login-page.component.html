@@ -1,0 +1,24 @@
+<div class="window">
+    <div class="header">
+      <div class="close_circle red common-flex-center">
+        <img class="image" src="../assets/avatars/close.png" alt="" />
+      </div>
+      <div class="close_circle yellow"></div>
+      <div class="close_circle green"></div>
+    </div>
+    <div class="main common-flex-center">
+      <div class="avatar">
+        <img class="image" src="../assets/avatars/boy.png" alt="" />
+      </div>
+      <form [formGroup]="loginForm">
+        <div class="input-container common-flex-center">
+          <input type="text" placeholder="E-mail" formControlName='email'/>
+      
+          <input type="password" placeholder="Password" formControlName='password'/>
+          <button class="login-btn"(click)="goForward()" type="submit">Continue</button>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+  

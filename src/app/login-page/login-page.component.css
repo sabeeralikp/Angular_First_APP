@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "poppins-regular";
+  src: url("../../assets//Fonts/Poppins/Poppins-Regular.ttf");
+}
+
+.window {
+  width: 1188px;
+  height: 727px;
+  background: rgba(54, 130, 200, 0.28);
+  border-radius: 10px 10px 10px 10px;
+}
+.header {
+  background: #ffffff;
+  height: 4%;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px 10px 0 0;
+}
+.close_circle {
+  width: 12px;
+  height: 12px;
+  background: rgba(239, 84, 63, 0.73);
+  border-radius: 50%;
+  margin-right: 6px;
+  position: relative;
+  padding: 4px 4px;
+}
+.close_circle:hover > img {
+  display: block;
+}
+.close_circle img {
+  height: 70%;
+  width: 70%;
+  display: none;
+  opacity: 0.5;
+}
+.red {
+  background: rgba(239, 84, 63, 0.73);
+}
+.yellow {
+  background: rgba(239, 158, 63, 0.86);
+}
+.green {
+  background: rgba(140, 239, 63, 0.64);
+}
+.main {
+  height: 96%;
+  flex-direction: column;
+}
+.avatar {
+  border-radius: 50%;
+  background: rgba(196, 196, 196, 0.56);
+  height: 160px;
+  width: 160px;
+  position: relative;
+  padding: 22px 17px;
+}
+.avatar img {
+  height: 100%;
+  width: 100%;
+  /* position: absolute;
+      top: 0%;
+      left: 0%; */
+}
+.input-container {
+  margin-top: 40px;
+  flex-direction: column;
+}
+input {
+  outline: none;
+  background-color: rgba(174, 201, 226, 0.34);
+  border: none;
+  padding: 20px 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 10px 10px;
+}
+::placeholder,
+p {
+  color: #ffffff;
+  font-size: 10px;
+  font-family: "poppins-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  opacity: 0.5;
+}
+
+.common-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-btn {
+  background: rgba(99, 119, 137, 0.34);
+  padding: 12px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "poppins-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 7px;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.5s ease-in-out;
+}
+.login-btn:hover {
+  transform: scale(1.1);
+}
